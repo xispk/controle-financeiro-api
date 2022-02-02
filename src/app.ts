@@ -29,7 +29,12 @@ i18next
 const app = express();
 
 app.use(middleware.handle(i18next));
-app.use(cors());
+app.use(
+  cors({
+    origin: [config.get<string>('origin')],
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 app.use(express.json());
 app.use(deserializeUser);
