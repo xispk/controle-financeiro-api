@@ -31,6 +31,8 @@ const app = express();
 app.use(middleware.handle(i18next));
 app.use(
   cors({
+    origin: config.get<string>('origin'),
+    methods: ['GET', 'PUT', 'POST'],
     credentials: true,
   })
 );
