@@ -28,6 +28,7 @@
     "nanoid": "^3.2.0",
     "pino": "^7.6.4",
     "pino-pretty": "^7.5.0",
+    "ts-node": "^10.4.0",
     "zod": "^3.11.6"
   },
   "devDependencies": {
