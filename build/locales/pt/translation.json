@@ -1,0 +1,22 @@
+{
+  "error": {
+    "default": "Erro de servidor",
+    "invalid_credentials": "Credenciais inválidas",
+    "user_unavailable": "Usuário inválido indisponivel",
+    "user_create": "Erro ao tentar criar usuário",
+    "user_404": "Usuário inválido ou inexistente",
+    "user_logged_out": "Nenhum usuario logado no momento",
+    "user_inactive": "Usuário inativo",
+    "account_unavailable": "Conta inválido indisponivel",
+    "account_404": "Conta inválida ou inexistente",
+    "account_inactive": "Conta inativa",
+    "account_max_basic": "Número máximo de usuários da conta básica atingido",
+    "account_user_404": "Usuário inválido ou não pertence à conta informada",
+    "account_unauthorized": "Senha ou email inválidos"
+  },
+  "success": {
+    "user_create": "Usuário criado com sucesso",
+    "account_create": "Conta criada com sucesso",
+    "session_create": "Sessão criada com sucesso"
+  }
+}

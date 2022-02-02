@@ -1,0 +1,22 @@
+{
+  "error": {
+    "default": "Server error",
+    "invalid_credentials": "Invalid credentials",
+    "user_unavailable": "User invalid or unavailable",
+    "user_create": "Failed to create new user",
+    "user_404": "Invalid or inexistent user",
+    "user_logged_out": "There is no user logged in",
+    "user_inactive": "User inactive",
+    "account_unavailable": "Account invalid or unavailable",
+    "account_404": "Invalid or inexistent account",
+    "account_inactive": "Account inactive",
+    "account_max_basic": "Max numbers of users reached for basic tier",
+    "account_user_404": "Invalid user or inexistent on the informed account",
+    "account_unauthorized": "Invalid password or email"
+  },
+  "success": {
+    "user_create": "User created successfully",
+    "account_create": "Account created successfully",
+    "session_create": "Session created successfully"
+  }
+}
