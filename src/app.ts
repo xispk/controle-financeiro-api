@@ -31,7 +31,7 @@ const app = express();
 app.use(middleware.handle(i18next));
 app.use(
   cors({
-    origin: '*',
+    origin: config.get<string>('origin'),
     credentials: true,
   })
 );
