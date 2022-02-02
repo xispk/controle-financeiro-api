@@ -3,7 +3,7 @@ export default {
   port: 3001,
   // origin: 'http://localhost:3000',
   origin: 'https://cifraodeouro.vercel.app',
-  cookieDomain: 'cifraodeouro.vercel.app',
+  cookieDomain: 'vercel.app',
   cookieSecure: true,
   logLevel: 'info',
   // dbUri: 'mongodb://localhost:27017/controle-financeiro',
