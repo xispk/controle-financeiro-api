@@ -2,7 +2,7 @@ export default {
   host: 'http://localhost',
   port: 3001,
   // origin: 'http://localhost:3000',
-  origin: 'https://cifraodeouro.herokuapp.com/',
+  origin: 'https://cifraodeouro.herokuapp.com',
   cookieDomain: 'herokuapp.com',
   cookieSecure: true,
   logLevel: 'info',
