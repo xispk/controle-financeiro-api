@@ -9,4 +9,9 @@ export default {
   // dbUri: 'mongodb://localhost:27017/controle-financeiro',
   access_token_sign_options: { expiresIn: '15m', algorithm: 'RS256' },
   refresh_token_sign_options: { expiresIn: '1y', algorithm: 'RS256' },
+  access_token_private_key: '',
+  access_token_public_key: '',
+  refresh_token_private_key: '',
+  refresh_token_public_key: '',
+  mongo_uri: '',
 };
