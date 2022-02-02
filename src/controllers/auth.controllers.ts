@@ -67,6 +67,7 @@ export const createSessionHandler = async (
       httpOnly: true,
       domain: cookieDomain,
       path: '/',
+      sameSite: false,
       secure: cookieSecure,
     });
 
@@ -85,6 +86,7 @@ export const createSessionHandler = async (
       httpOnly: true,
       domain: cookieDomain,
       path: '/',
+      sameSite: false,
       secure: cookieSecure,
     });
 
