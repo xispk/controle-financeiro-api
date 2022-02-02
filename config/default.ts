@@ -3,7 +3,7 @@ export default {
   port: 3001,
   // origin: 'http://localhost:3000',
   origin: 'https://cifraodeouro.herokuapp.com',
-  cookieDomain: '.herokuapp.com',
+  cookieDomain: 'cifraodeouro.herokuapp.com',
   cookieSecure: true,
   logLevel: 'info',
   // dbUri: 'mongodb://localhost:27017/controle-financeiro',
