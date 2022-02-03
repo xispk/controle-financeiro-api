@@ -3,6 +3,7 @@ import { jwtVerify } from '../utils/jwt';
 
 // takes the access token decode and set the content to res.locals as user
 const deserializeUser = (req: Request, res: Response, next: NextFunction) => {
+  // get the access token from the cookies or authorization header
   const accessToken =
     req.cookies.accessToken ||
     (req.headers.authorization || '').replace(/^Bearer\s/, '');

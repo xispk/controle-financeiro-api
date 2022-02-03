@@ -9,7 +9,6 @@ import {
 } from '../services/accounts.services';
 import { createUser } from '../services/users.services';
 import CustomError from '../utils/customError';
-import log from '../utils/logger';
 
 // create new users
 export const createUserHandler = async (
@@ -57,9 +56,7 @@ export const createUserHandler = async (
       userId: String(newUser._id),
     });
 
-    res
-      .status(201)
-      .json({ status: 'success', message: req.t('success.user_create') });
+    res.status(201).json({ message: req.t('success.user_create') });
   } catch (error: any) {
     if (error.code === 11000) {
       return next(new CustomError(req.t('error.user_unavailable'), 400));

@@ -13,9 +13,7 @@ export const createAccountHandler = async (
 ) => {
   try {
     await createAccount(req.body);
-    res
-      .status(201)
-      .json({ status: 'success', message: req.t('success.account_create') });
+    res.status(201).json({ message: req.t('success.account_create') });
   } catch (error: any) {
     if (error.code === 11000) {
       return next(new CustomError(req.t('error.account_unavailable'), 400));

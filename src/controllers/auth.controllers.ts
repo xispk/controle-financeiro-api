@@ -67,7 +67,7 @@ export const createSessionHandler = async (
       httpOnly: true,
       domain: cookieDomain,
       path: '/',
-      sameSite: 'none',
+      sameSite: 'strict',
       secure: cookieSecure,
     });
 
@@ -86,13 +86,16 @@ export const createSessionHandler = async (
       httpOnly: true,
       domain: cookieDomain,
       path: '/',
-      sameSite: 'none',
+      sameSite: 'strict',
       secure: cookieSecure,
     });
 
     res
       .status(200)
-      .json({ status: 'success', message: req.t('success.session_create') });
+      .json({
+        message: req.t('success.session_create'),
+        data: { accessToken, refreshToken },
+      });
   } catch (error) {
     next(error);
   }
