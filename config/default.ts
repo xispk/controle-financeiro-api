@@ -1,8 +1,16 @@
 export default {
-  host: 'http://localhost',
+  host: `${
+    process.env.NODE_ENV === 'production'
+      ? 'https://cifraodeouro-api.herokuapp.com'
+      : 'http://localhost'
+  }`,
   port: 3001,
   // origin: 'http://localhost:3000',
-  origin: 'https://cifraodeouro.vercel.app',
+  origin: `${
+    process.env.NODE_ENV === 'production'
+      ? 'https://cifraodeouro.vercel.app'
+      : 'http://localhost:3000'
+  }`,
   cookieDomain: '.vercel.app',
   cookieSecure: true,
   logLevel: 'info',
